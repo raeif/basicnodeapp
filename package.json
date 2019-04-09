@@ -1,0 +1,28 @@
+{
+  "name": "basicnodeapp",
+  "version": "1.0.0",
+  "description": "basic node app for use with CICD pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raeif/basicnodeapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raeif/basicnodeapp/issues"
+  },
+  "homepage": "https://github.com/raeif/basicnodeapp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.2",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  }
+}
