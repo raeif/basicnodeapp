@@ -1,0 +1,8 @@
+-#!/bin/sh
+ssh ubuntu_adm@10.10.20.21 <<EOF
+ cd /opt/basicnodeapp
+ git pull
+ npm install --production
+ npm start
+ exit
+EOF
