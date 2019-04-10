@@ -7,6 +7,7 @@ ssh ubuntu_adm@10.10.20.21 <<EOF
  tar xzvf basicnodeapp.tar.gz -C /opt
  cd /opt/basicnodeapp
  npm install --production
+ npm stop
  npm start
  exit
 EOF
