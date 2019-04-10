@@ -3,8 +3,9 @@ tar -czvf /tmp/basicnodeapp.tar.gz ../basicnodeapp
 aws s3 cp /tmp/basicnodeapp.tar.gz s3://ngenit-artifacts
 ssh ubuntu_adm@10.10.20.21 <<EOF
  cd /opt/
- sudo aws s3 cp s3://basicnodeapp.tar.gz .
- tar xzvf basicnodeapp.tar.gz -C /opt/basicnodeapp
+ sudo aws s3 cp s3://ngenit-artifacts/basicnodeapp.tar.gz .
+ tar xzvf basicnodeapp.tar.gz -C /opt
+ cd /opt/basicnodeapp
  npm install --production
  npm start
  exit
